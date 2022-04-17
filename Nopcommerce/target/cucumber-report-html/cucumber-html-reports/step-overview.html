@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Nopcommerce</td>
+                          <td>1</td>
+                        <td>17 Apr 2022, 02:12</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">stepDefinitions.AddToCartTest.addcartClick()</td>
+                <td>2</td>
+                <td class="duration" data-value="145925000">145ms</td>
+                <td class="duration" data-value="72962500">072ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.AddToCartTest.addcartClickSecond()</td>
+                <td>1</td>
+                <td class="duration" data-value="56361700">056ms</td>
+                <td class="duration" data-value="56361700">056ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.AddToCartTest.assertTxtFTest()</td>
+                <td>1</td>
+                <td class="duration" data-value="350924500">350ms</td>
+                <td class="duration" data-value="350924500">350ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.AddToCartTest.assertTxtSecondTest()</td>
+                <td>1</td>
+                <td class="duration" data-value="461300000">461ms</td>
+                <td class="duration" data-value="461300000">461ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.AddToCartTest.catClickTest()</td>
+                <td>2</td>
+                <td class="duration" data-value="2227068600">2s 227ms</td>
+                <td class="duration" data-value="1113534300">1s 113ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.AddToCartTest.catClickTestSecond()</td>
+                <td>1</td>
+                <td class="duration" data-value="720829300">720ms</td>
+                <td class="duration" data-value="720829300">720ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.AddToCartTest.itemClick()</td>
+                <td>2</td>
+                <td class="duration" data-value="2922639900">2s 922ms</td>
+                <td class="duration" data-value="1461319950">1s 461ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.AddToCartTest.itemClickSecond()</td>
+                <td>1</td>
+                <td class="duration" data-value="1486574600">1s 486ms</td>
+                <td class="duration" data-value="1486574600">1s 486ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.AddToCartTest.logClick()</td>
+                <td>2</td>
+                <td class="duration" data-value="884745400">884ms</td>
+                <td class="duration" data-value="442372700">442ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.Hook.closeBrowser()</td>
+                <td>5</td>
+                <td class="duration" data-value="746324600">746ms</td>
+                <td class="duration" data-value="149264920">149ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.Hook.openUrl()</td>
+                <td>5</td>
+                <td class="duration" data-value="4913915400">4s 913ms</td>
+                <td class="duration" data-value="982783080">982ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.LoginTest.loginLink()</td>
+                <td>5</td>
+                <td class="duration" data-value="3346501100">3s 346ms</td>
+                <td class="duration" data-value="669300220">669ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.LoginTest.loginSubmit()</td>
+                <td>5</td>
+                <td class="duration" data-value="3223666200">3s 223ms</td>
+                <td class="duration" data-value="644733240">644ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.LoginTest.navigateToHomePageLogin()</td>
+                <td>5</td>
+                <td class="duration" data-value="16292891500">16s 292ms</td>
+                <td class="duration" data-value="3258578300">3s 258ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.SuccessfulOrderTest.asserTxt()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.SuccessfulOrderTest.clickOnSecondTab()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.SuccessfulOrderTest.confPaymenTest()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.SuccessfulOrderTest.fillTheForm()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.SuccessfulOrderTest.paymenTest()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.SuccessfulOrderTest.paymentInfoTest()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.SuccessfulOrderTest.shippingCart()</td>
+                <td>1</td>
+                <td class="duration" data-value="8666527300">8s 666ms</td>
+                <td class="duration" data-value="8666527300">8s 666ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>21</td>
+              <td>45</td>
+              <td class="duration">46s 446ms</td>
+              <td class="duration">1s 032ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

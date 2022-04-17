@@ -13,7 +13,7 @@ public class Login {
     private By loginMail = By.id("Email");
     private By loginPw = By.id("Password");
     private By loginBtn = By.xpath("//button [@class=\"button-1 login-button\"]");
-    private By lnktxt = By.xpath("//a[@class=\"ico-account\"]");
+    //private By lnktxt = By.xpath("//a[@class=\"ico-account\"]");
 
     public void credintionalValue(String logEmail, String logpw){
         driver.findElement(loginMail).sendKeys(logEmail);
@@ -21,14 +21,7 @@ public class Login {
         driver.findElement(loginBtn).click();
 
     }
-    //public void clickloginBtn(){
-       // driver.findElement(loginBtn).click();
 
-   // }
-    //public boolean  myAccounttxt(){
-      //  driver.findElement(lnktxt).isDisplayed();
-       // return true;
-    //}
 
 
 

@@ -10,6 +10,7 @@ public class HomePage {
             }
     private By rigesterBtn = By.xpath("//a[@class ='ico-register']");
     private By loginHp = By.xpath("//a[@class=\"ico-login\"]");
+    private By hpLogo = By.xpath("//div[@class=\"header-logo\"]/a/img[@src=\"https://demo.nopcommerce.com/Themes/DefaultClean/Content/images/logo.png\"]");
 
 
     public RegistrationFormPage clickRegBtn(){
@@ -20,6 +21,9 @@ public class HomePage {
         driver.findElement(loginHp).click();
         return new Login(driver);
     }
+    public void homepageLogo(){
+         driver.findElement(hpLogo).click();
+         }
 
 
 }

@@ -1,0 +1,15 @@
+stepDefinitions\AddToCompareTest.class
+stepDefinitions\SuccessfulOrderTest.class
+stepDefinitions\FilterColorTest.class
+stepDefinitions\ChangPasswordTest.class
+stepDefinitions\AddToCartTest.class
+stepDefinitions\AddToWishListTest.class
+stepDefinitions\CurrenciesTest.class
+stepDefinitions\SelectTagsTest.class
+stepDefinitions\LoginTest.class
+stepDefinitions\RandomCategoryTest.class
+stepDefinitions\SearchTest.class
+stepDefinitions\Registration.class
+stepDefinitions\Hook.class
+runner\SearchRunner.class
+runner\TestRunner.class

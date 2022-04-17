@@ -1,0 +1,14 @@
+pages\SuccessfulOrder.class
+pages\RegistrationConfirmationPage.class
+pages\Currencies.class
+pages\FilterColor.class
+pages\RegistrationFormPage.class
+pages\HomePage.class
+pages\AddToWishList.class
+pages\AddToCompareList.class
+pages\SelectTags.class
+pages\ChangPassWord.class
+pages\SearchPage.class
+pages\RandomCategories.class
+pages\AddToCart.class
+pages\Login.class

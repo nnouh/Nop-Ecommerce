@@ -1,20 +1,15 @@
 package stepDefinitions;
 
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import pages.HomePage;
 import pages.RegistrationConfirmationPage;
 import pages.RegistrationFormPage;
 
 public class Registration {
-   //String url = "https://demo.nopcommerce.com/";
 
     @Given("navigate to the homepage url")
     public void navigateToHomePage(){
@@ -29,7 +24,7 @@ public class Registration {
     @And("fill valid data into registration form")
     public void regFormInsertData(){
         RegistrationFormPage regForm = new RegistrationFormPage(Hook.driver);
-        regForm.regFormData("Nashwa", "Nouh", "my@gmail.com", "Nashwa@123");
+        regForm.regFormData("Nashwa", "Nouh", "my2@gmail.com", "Nashwa@123");
     }
     @And("click on submit button")
     public void subBtnClick(){

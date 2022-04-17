@@ -1,4 +1,3 @@
-@smoke
 Feature: user could be able to register
   Scenario: user could find register form by clicking on register button
     Given navigate to the homepage url
